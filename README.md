@@ -2,9 +2,9 @@
 
 ### Задание 1
 
-`Развертывание GitLab и настройка Runner`
+Развертывание GitLab и настройка Runner
 
-1. `Установка зависимостей`
+1. Установка зависимостей
 
 ```
 # Обновление системы
@@ -25,7 +25,7 @@ curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/s
 sudo apt install gitlab-runner -y
 ```
 
-2. `Настройка Vagrant для GitLab - Создаем Vagrantfile`
+2. Настройка Vagrant для GitLab - Создаем Vagrantfile
 
 ```
 Vagrant.configure("2") do |config|
@@ -59,15 +59,15 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-3. `Запускаем виртуальную машину`
+3. Запускаем виртуальную машину
 
 ```
 vagrant up
 ```
 
-4. `Регистрация GitLab Runner`
+4. Регистрация GitLab Runner
 
-`После запуска GitLab (может занять несколько минут), заходим в веб-интерфейс (http://localhost:8080), создаем проект и получаем регистрационный токен и регистрируем Runner`
+После запуска GitLab (может занять несколько минут), заходим в веб-интерфейс (http://localhost:8080), создаем проект и получаем регистрационный токен и регистрируем Runner
 
 ```
 docker run --rm -it \
@@ -85,7 +85,7 @@ docker run --rm -it \
   --access-level="not_protected"
 ```
 
-5. `Запускаем Runner`
+5. Запускаем Runner
 
 ```
 docker run -d \
@@ -96,17 +96,17 @@ docker run -d \
   gitlab/gitlab-runner:latest
 ```
 
-`Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
-[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
+Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
+[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)
 
 
 ---
 
 ### Задание 2
 
-`Настройка CI/CD pipeline`
+Настройка CI/CD pipeline
 
-1. `Создаем файл .gitlab-ci.yml`
+1. Создаем файл .gitlab-ci.yml
 
 ```
 stages:
@@ -183,7 +183,7 @@ deploy_prod:
     - tags
 ```
 
-2. `Команды для работы с репозиторием`
+2. Команды для работы с репозиторием
 
 ```
 # Клонирование репозитория
@@ -203,7 +203,7 @@ git commit -m "Initial commit"
 git push -u origin main
 ```
  
-`Проверка работы`
+Проверка работы
 
 ```
 После push в репозиторий автоматически запустится pipeline
@@ -227,8 +227,8 @@ git push -u origin main
 Docker правильно установлен и текущий пользователь добавлен в группу docker
 ```
 
-`Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
-[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
+Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
+[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)
 
 
 ---
