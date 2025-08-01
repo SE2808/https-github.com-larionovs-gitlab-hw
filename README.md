@@ -97,7 +97,7 @@ docker run -d \
 ```
 
 `Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
-![Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
+[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
 
 
 ---
@@ -228,7 +228,7 @@ Docker правильно установлен и текущий пользов�
 ```
 
 `Вместо скриншотов лучшем решением будет показать работу с последовательными действиями
-![Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
+[Домашняя работа](https://docs.google.com/document/d/1Midc2AmLL-5gOH28fHwvYc7PandWz5tq/edit?usp=drive_link&ouid=115067957742774085873&rtpof=true&sd=true)`
 
 
 ---
